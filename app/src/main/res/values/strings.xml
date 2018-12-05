@@ -1,4 +1,22 @@
 <resources>
     <string name="app_name">Sensores</string>
     <string name="dialog_OK">Ok</string>
+
+    <string name="toast_temperaturaON">Temperatura ON</string>
+    <string name="toas_ilumuncacionON">Iluminación ON</string>
+    <string name="toast_aceleracionON">Aceleración ON</string>
+    <string name="toast_humedadON">Humedad ON</string>
+
+    <string name="toast_temperaturaOFF">Temperatura OFF</string>
+    <string name="toas_ilumuncacionOFF">Iluminación OFF</string>
+    <string name="toast_aceleracionOFF">Aceleración OFF</string>
+    <string name="toast_humedadOFF">Humedad OFF</string>
+    <string name="menuItemPrueba">Modo prueba</string>
+
+    <string name="caida_msg">Se ha producido una caida o movimiento brusco</string>
+    <string name="temp_alta_msg">Temperatura alta</string>
+    <string name="temp_baja_msg">Temperatura baja</string>
+    <string name="humedad_alta_msg">Humedad alta</string>
+    <string name="humedad_baja_msg">Humedad baja</string>
+    <string name="iluminacion_baja_msg">Iluminación baja</string>
 </resources>

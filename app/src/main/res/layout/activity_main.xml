@@ -28,7 +28,7 @@
         app:layout_constraintTop_toBottomOf="@+id/txtTemperatura" />
 
     <TextView
-        android:id="@+id/txtGiroscopio"
+        android:id="@+id/txtAcelerometro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -42,5 +42,72 @@
         android:id="@+id/txtIluminacion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/inputLimite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/btnLimite"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnLimite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Nuevo límite"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/botonesSensores"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/botonesSensores"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        >
+
+        <Button
+            android:id="@+id/btnIluminacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ilum"
+
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/btnAcelerometro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Acel" />
+
+        <Button
+            android:id="@+id/btnTemperatura"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Temp"/>
+
+        <Button
+            android:id="@+id/btnHumedad"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Hum"/>
+
+    </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>
